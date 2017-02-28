@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <!--  <title>@ViewBag.Amazing Suite Rome</title> -->
+		 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amazing Suite Rome</title>
+    
+    <meta name="description" content="Situato a 100 metri dal Colosseo e a vicino a Via Cavour, Amazing Suite Rome offre alloggi a ristorazione indipendente con connessione WiFi gratuita, climatizzazione, TV a schermo piatto.">
+    <meta name="keywords" content="Amazing Suite Rome Roma, Amazing Suite Vittoriano Roma, Amazing Suite Colosseo Roma, Hotel Amazing Suite Roma, appartamento centro storico roma, casa vacanze roma centro,suite roma, relais di lusso roma">
+    <meta name="Author" content="EasyConsulting S.r.l.">
+    <meta name="robots" content="NOODP">
+    
+    <meta http-equiv="Content-Language" content="it" >
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $core->url; ?>/favicon.ico" ></link>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Theme CSS -->
+    <link href="css/stylepage.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/loadpopup.css" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Plugin CSS -->
+    <link href="css/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="css/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="css/plugins/animate.css" rel="stylesheet" type="text/css">
+    
+    <!-- jquery-ui CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">	
+    
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Retina.js - Load first for faster HQ mobile images. -->
+    <script src="js/plugins/retina/retina.min.js"></script>
+</head>
+<body id="page-top" onload="inizializzaMappa();">
+		
+<div class="container-fluid">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-fixed-top" id="menu" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle col-xs-2" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Espandi barra di navigazione</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+				</button>
+        </div>
+  
+            <div class="col-sm-12 col-md-push-1 col-md-9 nav navbar-nav">
+
+        <div class="row collapse navbar-collapse navbar-ex1-collapse"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+					<div class="btn-group">
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+					<ul>
+                <li><img src="img/png/logo_amazingsuiterome-bianco.png" alt="logo amazing suite rome" class="logo"></li>
+                <li><a href="colosseo/nuovohome.php" title="Amazing Suote Rome - Colosseo" target="_blank">Amazing Suite Colosseo</a></li>
+                <li><a href="vittoriano/" title="Amazing Suote Rome - Vittoriano" target="_blank">Amazing Suite Vittoriano</a></li>
+                <li><a href="navona/index.php" title="Amazing Suote Rome - Navona" target="_blank">Amazing Suite Navona</a></li>
+				<li><a href="#" title="Contatti" onclick="loadPopup(1);">CONTATTI</a></li>
+				</ul>
+					</div>
+						</div>
+	    <!--
+            <ul class="col-sm-12 col-md-2" id="lingue">
+                <li><a href="/">IT</a></li>
+                <li class="slash">-</li>
+                <li><a href="en/">EN</a></li>
+            </ul>
+	    -->
+        </div>
+				</div>
+    </nav>
+	@RenderBody()
+		
+</body>
+</html>

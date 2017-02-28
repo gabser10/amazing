@@ -1,0 +1,603 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,100,200,600,500,700,900,800);
+@import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
+
+/* Typography */
+html, body {height: 100%;}
+html {font-size: 100%;}
+body{font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 15px;}
+h1,h2,h3,h4,h5,h6{text-transform: uppercase;}
+h1,h2,h3{margin-top: 20px;margin-bottom: 10px;}
+h4,h5,h6 {margin-top: 10px;margin-bottom: 10px;}
+h1, h2, h3, h4, h5, h6{line-height: 1.1;}
+h1{font-size: 2.571em;}
+h2{font-size: 2.142em;}
+h3{font-size: 1.714em;}
+h4{font-size: 1.285em;}
+h5{font-size: 1em;}
+h6{font-size: 0.857em;}
+p {font-size: 1em;line-height:1.42857143;text-align:justify;}
+p {margin: 0 0 10px;}
+.x-small{font-size:80%;}
+a{text-decoration:none;color: #333333;}
+a:focus, a:hover {text-decoration:none;color: #333333;}
+ul{list-style-type: none;}
+/* END Tipography*/
+
+/*MENU*/
+#menu{
+    background: #333333;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#menu li{
+    display: inline-block;
+}
+#menu a{
+    color: #FFF;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 12px;
+    
+}
+#menu a:hover, #menu a:focus{
+    color: #333333;
+    background: #FFF;
+}
+.logo{
+    height: 70px;
+    margin-right: 20px;
+}
+.active a{
+    color: #333333 !important;
+    background: #FFF !important;
+}
+.navbar{
+    border: none;
+}
+.navbar-nav{
+    padding-left: 15px;
+}
+#lingue{
+    color: #FFF;
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 16px;
+    text-align: right;
+    padding-right: 45px;
+}
+#lingue li{
+
+}
+#lingue a{
+    font-size: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*SLIDESHOW*/
+#carousel-1{
+    margin-top: 50px;
+    height: 650px;
+}
+#carousel-1 .item {
+    height: 650px;
+}
+.carousel-control{
+    width: 10% !important;
+}
+#carousel-1 .carousel-control.right, #carousel-1 .carousel-control.left{
+    background: transparent;
+}
+.item img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+#carousel-1 .item div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+#carousel-1 .item div p{
+    text-align: center;
+}
+#carousel-1 h4{
+    font-size: 3em;
+    color: #FFF;
+}
+#carousel-1 p{
+    font-size: 2em;
+    color: #FFF;
+}
+#logo{
+    background: #FFF;
+    width: 300px;
+    height: 104px;
+}
+#logo img{
+     position: absolute !important;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) !important;
+}
+#carousel-1 .item div img{
+    position: static;
+    transform: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+.claim{
+    color: #FFF;
+    font-size: 3.7em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 10;
+}
+.claim p{
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/*ILGRUPPO*/
+.black{
+    margin-top: 20px;
+    height: 29px;
+    float: left;
+    margin-right: 20px;
+}
+.ilgruppo div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.ilgruppo a{
+    display: block;
+}
+.ilgruppo h3{
+    margin-bottom: 0;
+}
+.struttura{
+    padding: 0 !important;
+}
+.struttura img{
+    margin-bottom: 10px;
+}
+.struttura h4{
+    color: #DAA959;
+}
+.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: calc(100% - 10px);
+    display: none;
+}
+.mask img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+/*CONTATTI*/
+#contact {
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+#contact h3{
+    margin-top:0;
+}
+.contatti-logo{
+    height: 54px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.contatti-logo img{
+    position: absolute;
+    bottom: 0;
+}
+.contenitore-mappa{
+    height: 550px;
+    display: block;
+}
+#mappa{
+    padding-left: 30px;
+    margin-top: 0px;
+}
+.indirizzo{
+    text-align: left;
+    margin-top: 20px;
+}
+.indirizzo h4{
+    color: #333;
+}
+.contatti-imm{
+    margin-right: 10px;
+}
+.via{
+    margin-top: 15px;
+}
+.mappa {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 15px);
+    height: 550px;
+}
+#map_canvas {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/*SLIDE TESTUALI*/
+#carousel-2{
+    position: absolute;
+    width: 100%;
+    top: 145px;
+}
+#carousel-2 .item h4{
+    color: #FFF;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#carousel-2 .item p{
+    color: #FFF;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#carousel-2 .carousel-control.right, #carousel-2 .carousel-control.left{
+    background: transparent;
+}
+.frascati{
+    height: 350px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*FOOTER*/
+#footer{
+    background: #333;
+    color: #FFF;
+    text-align: center;
+    padding-top: 20px;
+}
+#footer a{
+    color: #FFF;
+}
+
+#footer p{
+    text-align: center;
+}
+
+.list-inline{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.privacy{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+body{
+    font-size: 0.8em;
+}
+h3{
+    font-size: 1.285em;
+}
+.logo{
+    display: none;
+}
+/*MENU*/
+.navbar-nav{
+    padding-left: 0;
+    padding-right: 30px;
+}
+.navbar-toggle {
+  background-image:url(../img/png/menu.png);
+  width: 35px;
+}
+.navbar-collapse{
+    border: none;
+    box-shadow: none;
+}
+#menu li{
+    display: block;
+}
+.slash{
+    display: none !important;
+}
+#lingue li{
+    margin-bottom: 7px;
+    display: inline-block;
+}
+    
+/*SLIDESHOW*/
+.ilgruppo{
+    display: none;
+}
+#carousel-1{
+    height: 140px;
+    margin-top: 70px;
+}
+#carousel-1 .item{
+    height: 140px;
+}
+#carousel-1 .item div img{
+    height: auto;
+}
+.claim{
+    top: 60%;
+    font-size: 1.3em;
+}
+.claim img{
+    width: 250px;
+}
+#logo{
+    display: none;
+}
+    #carousel-1 h4{
+    font-size: 1.5em;
+    color: #FFF;
+    }
+    #carousel-1 p{
+        font-size: 1em;
+        color: #FFF;
+    }
+
+/*IL GRUPPO*/
+.black{
+    margin-top: 19px;
+    height: 20px;
+}
+.mask{
+    height: 100%;
+}
+.mask img{
+    height: 100px;
+}
+.struttura{
+    margin-top: 20px;
+}
+
+/*MAPPA*/
+#contact{
+    margin-top: 0;
+    height: 900px;
+}
+.contenitore-mappa{
+    height: 400px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    margin-left: 15px;
+}
+.mappa{
+    height: 400px;
+    width: 100%;
+}
+
+/*SLIDE TESTUALI*/
+#carousel-2{
+    top: 40px;
+}
+#carousel-2 .item h4{
+    font-size: 0.8em;
+}
+#carousel-2 .item p{
+    font-size: 0.8em;
+}
+.frascati{
+    height: auto;
+}
+
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-toggle {
+        background-image:url(../img/png/menu.png);
+        width: 35px;
+    }
+    .navbar-collapse{
+        border: none;
+        box-shadow: none;
+    }
+    
+    /*MENU*/
+    .navbar-nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #menu li {
+        display: block;
+    }
+    .slash{
+    display: none !important;
+    }
+    #lingue {
+    }
+    #lingue li{
+        margin-bottom: 7px;
+    }
+    #lingue a{
+        padding: 5px;
+    }
+    
+    /*SLIDESHOW*/
+    #carousel-1{
+        height: 350px;
+        margin-top: 50px;
+    }
+    #carousel-1 .item{
+        height: 350px;
+    }
+    #carousel-1 .item div img{
+        height: auto;
+    }
+    .claim{
+        font-size: 2.7em;
+    }
+    .mask img{
+        height: 100px;
+    }
+    
+    /*CONTATTI*/
+    .contenitore-mappa{
+        margin-bottom: 40px;
+    }
+    #gruppo-contatti{
+        margin-bottom: 40px;
+        margin-left: -15px;
+    }
+    
+    /*SLIDE TESTUALI*/
+    #carousel-2{
+        top: 110px;
+    }
+    #carousel-2 .item h4{
+        font-size: 1.5em;
+    }
+    #carousel-2 .item p{
+        font-size: 0.7em;
+    }
+    .frascati{
+        height: auto;
+    }
+    #footer{
+     //   display: inline-block;
+    }
+    #footer h4{
+        font-size: 0.8em;
+    }
+    #footer p{
+        font-size: 0.65em;
+    }
+    
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*MENU*/
+    #menu{
+        padding-left: 15px;
+    }
+    #menu a{
+        font-size: 1em;
+    }
+    
+    /*SLIDESHOW*/
+    #carousel-1{
+        height: 450px;
+        margin-top: 50px;
+    }
+    #carousel-1 .item{
+        height: 450px;
+    }
+    #carousel-1 .item div img{
+        height: auto;
+    }
+     .claim{
+        font-size: 2.7em;
+    }
+    
+    /*IL GRUPPO*/
+    .mask img{
+        height: 130px;
+    }
+    
+    /*CONTATTI*/
+    .indirizzo h4{
+        font-size: 0.8em;
+    }
+    .indirizzo p{
+        font-size: 0.7em;
+    }
+    
+     /*SLIDE TESTUALI*/
+    #carousel-2{
+        top: 155px;
+    }
+    #carousel-2 .item h4{
+        font-size: 1.5em;
+    }
+    #carousel-2 .item p{
+        font-size: 0.9em;
+    }
+    .frascati{
+        height: auto;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+     /*MENU*/
+    #menu{
+        padding-left: 15px;
+    }
+    #menu a{
+
+    }
+    #carousel-1, #carousel-1 .item{
+        height: 500px;
+    }
+    .claim{
+        font-size: 2.7em;
+    }
+    
+    /*IL GRUPPO*/
+    .mask img{
+        height: 150px;
+    }
+    
+    /*CONTATTI*/
+    .indirizzo h4{
+        font-size: 1em;
+    }
+    .indirizzo p{
+        font-size: 0.85em;
+    }
+    
+     /*SLIDE TESTUALI*/
+    #carousel-2{
+        top: 155px;
+    }
+    #carousel-2 .item h4{
+        font-size: 2em;
+    }
+    #carousel-2 .item p{
+        font-size: 1em;
+    }
+}
