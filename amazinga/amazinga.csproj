@@ -144,6 +144,7 @@
     <Content Include="img\png\menu.png" />
     <Content Include="img\png\prenota.PNG" />
     <Content Include="img\png\skyline.png" />
+    <Content Include="Views\Home\Vittoriano.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
