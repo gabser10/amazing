@@ -19,5 +19,6 @@ namespace amazinga.Controllers
 
 			return View();
 		}
+
 	}
 }

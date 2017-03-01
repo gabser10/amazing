@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{C39666AF-1BE0-456D-9E3C-A087B4FAF24E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="amazinga/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="amazinga/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="amazinga/Controllers/HomeController.cs" Line="20" Column="18" />
-      <File FileName="amazinga/Views/Shared/_Layout.cshtml" Line="71" Column="21" />
+      <File FileName="amazinga/Controllers/HomeController.cs" Line="21" Column="4" />
+      <File FileName="amazinga/Views/Shared/_Layout.cshtml" Line="68" Column="46" />
       <File FileName="amazinga/Views/Home/Index.cshtml" Line="299" Column="33" />
-      <File FileName="amazinga/Views/Home/Vittoriano.cshtml" Line="1" Column="1" />
+      <File FileName="amazinga/Views/Appartamenti/Navona.cshtml" Line="1" Column="1" />
+      <File FileName="amazinga/Controllers/Appartamenti.cs" Line="57" Column="27" />
+      <File FileName="amazinga/Views/Appartamenti/Vittoriano.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.amazinga PreferredExecutionTarget="MonoDevelop.Default" />

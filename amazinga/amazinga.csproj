@@ -72,6 +72,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Appartamenti.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
