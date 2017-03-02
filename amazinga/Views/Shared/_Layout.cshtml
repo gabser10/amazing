@@ -14,7 +14,7 @@
     <meta http-equiv="Content-Language" content="it" >
     
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $core->url; ?>/favicon.ico" ></link>
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $core->url; ?>/favicon.ico" >
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -45,45 +45,146 @@
 </head>
 <body id="page-top" onload="inizializzaMappa();">
 		
-<div class="container-fluid">
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <nav class="navbar navbar-fixed-top" id="menu" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle col-xs-2" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Espandi barra di navigazione</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-sm-12 col-md-push-1 col-md-9 nav navbar-nav">
+                <div class="row collapse navbar-collapse navbar-ex1-collapse">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul>
+                        <li><img src="img/png/logo_amazingsuiterome-bianco.png" alt="logo amazing suite rome" class="logo"></li>
+                        @Html.ActionLink("Navona", "Navona")
+                        <li><a href="colosseo/nuovohome.php" title="Amazing Suite Rome - Colosseo" target="_blank">Amazing Suite Colosseo</a></li>
+                        <li><a href="vittoriano/" title="Amazing Suote Rome - Vittoriano" target="_blank">Amazing Suite Vittoriano</a></li>
+                        <li><a href="navona/index.php" title="Amazing Suote Rome - Navona" target="_blank">Amazing Suite Navona</a></li>
+                        <li><a href="#" title="Contatti" onclick="loadPopup(1);">CONTATTI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+                <ul class="col-sm-12 col-md-2" id="lingue">
+                    <li><a href="/">IT</a></li>
+                    <li class="slash">-</li>
+                    <li><a href="en/">EN</a></li>
+                </ul>
+            -->
 
-    <!-- HEADER -->
-    <nav class="navbar navbar-fixed-top" id="menu" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle col-xs-2" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Espandi barra di navigazione</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-				</button>
-        </div>
-  <div class="col-sm-12 col-md-push-1 col-md-9 nav navbar-nav">
-<div class="row collapse navbar-collapse navbar-ex1-collapse"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-							<span class="caret"></span>
-  </button>
-<ul>
-                <li><img src="img/png/logo_amazingsuiterome-bianco.png" alt="logo amazing suite rome" class="logo"></li>
-				@Html.ActionLink("Navona","Navona")
-                <li><a href="colosseo/nuovohome.php" title="Amazing Suite Rome - Colosseo" target="_blank">Amazing Suite Colosseo</a></li>
-                <li><a href="vittoriano/" title="Amazing Suote Rome - Vittoriano" target="_blank">Amazing Suite Vittoriano</a></li>
-                <li><a href="navona/index.php" title="Amazing Suote Rome - Navona" target="_blank">Amazing Suite Navona</a></li>
-				<li><a href="#" title="Contatti" onclick="loadPopup(1);">CONTATTI</a></li>
-				</ul>
-					</div>
-						</div>
-	    <!--
-            <ul class="col-sm-12 col-md-2" id="lingue">
-                <li><a href="/">IT</a></li>
-                <li class="slash">-</li>
-                <li><a href="en/">EN</a></li>
-            </ul>
-	    -->
-        </div>
-				</div>
-    </nav>
+
+        </nav>
+    </div>
 	@RenderBody()
-		
+    <div class="row" id="footer">
+        <div class="col-sm-push-1 col-sm-10">
+            <div class="col-sm-4 wow fadeInUp">
+                <p>
+                    Amazing Suite S.r.l.<br>
+                    Via Natale del Grande, 51<br>
+                    00153 – Roma<br>
+                </p>
+            </div>
+            <div class="col-sm-4 wow fadeInUp">
+                <p>
+                    Mail: <a href="mailto:info@amazingsuiterome.com">info@amazingsuiterome.com</a><br>
+                    Tel. +39 3923858839<br>
+                    Tel. +39 3383067149
+                </p>
+            </div>
+            <div class="col-sm-4 wow fadeInUp">
+                <p>
+                    Pec: <a href="mailto:amazingsuitesrl@legalmail.it">amazingsuitesrl@legalmail.it</a><br>
+                    P.IVA 13622691007<br>
+                    Numero REA RM – 1461405
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <ul class="list-inline">
+                <li><a href="https://www.facebook.com/AmazingColosseoHiTech/?fref=ts" target="_blank"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
+                <li><a href="https://twitter.com/AColosseum" target="_blank"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 privacy">
+            <a href="colosseo/privacy.html" target="_blank">PRIVACY</a>
+        </div>
+        <div class="col-sm-12">
+            <p class="small text-center">&copy; 2016 easyconsulting</p>
+        </div>
+    </div>
 </body>
+
 </html>
+<!-- Core Scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+
+<script src="js/loadpopup.js" type="text/javascript"></script>
+<script src="js/plugins/jquery.easing.min.js"></script>
+<script src="js/plugins/classie.js"></script>
+
+<!-- Utilizzato per la barra del menu fissa -->
+<script src="js/plugins/cbpAnimatedHeader.js"></script>
+
+<!-- Utilizzato per le slide in carousel -->
+<script src="js/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!-- Utilizzati per la sezione della gallery -->
+<script src="js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/plugins/background/core.js"></script>
+<script src="js/plugins/background/background.js"></script>
+<script src="js/plugins/jquery.mixitup.js"></script>
+<!-- Jquery ui-->
+<script src="js/jquery-ui.min.js"></script>
+
+<!-- Mobile -->
+<script src="js/jquery.mobile.custom.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	    $("#villa").mouseenter(function(){$("#villa .mask").fadeIn(200);}).mouseleave(function(){$("#villa .mask").fadeOut(100);});
+	    $("#spa").mouseenter(function(){$("#spa .mask").fadeIn(200);}).mouseleave(function(){$("#spa .mask").fadeOut(100);});
+    $("#villanav").mouseenter(function(){$("#villanav .mask").fadeIn(200);}).mouseleave(function(){$("#villanav .mask").fadeOut(100);});
+	    $("#carousel-1").swiperight(function() {
+		$(this).carousel('prev');
+	    });
+	    $("#carousel-1").swipeleft(function() {
+		$(this).carousel('next');
+	    });
+
+	    $("#carousel-2").swiperight(function() {
+		$(this).carousel('prev');
+	    });
+	    $("#carousel-2").swipeleft(function() {
+		$(this).carousel('next');
+	    });
+	});
+</script>
+
+<!-- Theme Scripts -->
+<script src="js/wow/wow.min.js"></script>
+
+<script src="js/functions.js"></script>
+<script src="js/ilgruppo.js"></script>
+
+<!--------------------script googleMaps------------------------ -->
+<script src="http://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+<script src="js/mappagoogle.js" type="text/javascript"></script>
+
+<!--Inizio Codice ShinyStat -->
+<script type="text/javascript">$(document).ready(function(){ $("#shinystat img").attr("alt", "shinystat"); });</script>
+<div id="shinystat" style="display:none">
+    <script type="text/javascript" src="http://codiceisp.shinystat.com/cgi-bin/getcod.cgi?USER=amazing295&P=4"></script>
+    <noscript><a href="http://www.shinystat.com/it" target="_top" rel="nofollow"><img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=amazing295&P=4" alt="shinystat" /></a></noscript>
+</div>
