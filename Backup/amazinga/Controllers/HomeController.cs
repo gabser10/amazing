@@ -19,16 +19,6 @@ namespace amazinga.Controllers
 
 			return View();
 		}
-        public ActionResult Navona()
-        {
-            var mvcName = typeof(Controller).Assembly.GetName();
-            var isMono = Type.GetType("Mono.Runtime") != null;
 
-            ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
-            ViewData["Runtime"] = isMono ? "Mono" : ".NET";
-
-            return View();
-        }
-
-    }
+	}
 }

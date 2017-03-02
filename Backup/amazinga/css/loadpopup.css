@@ -1,0 +1,706 @@
+@charset "utf-8";
+
+/**************** inizio stile generico  ******************/
+.areaPopUp{
+    display:none;
+}
+.areaPopUpMenu{
+    display:none;
+}
+
+.areaPopUp{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+background: rgba(30,30,30,0.9);
+background: -moz-linear-gradient(top, rgba(30,30,30,0.9) 0%, rgba(30,30,30,0.9) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(30,30,30,0.9)), color-stop(100%, rgba(30,30,30,0.9)));
+background: -webkit-linear-gradient(top, rgba(30,30,30,0.9) 0%, rgba(30,30,30,0.9) 100%);
+background: -o-linear-gradient(top, rgba(30,30,30,0.9) 0%, rgba(30,30,30,0.9) 100%);
+background: -ms-linear-gradient(top, rgba(30,30,30,0.9) 0%, rgba(30,30,30,0.9) 100%);
+background: linear-gradient(to bottom, rgba(30,30,30,0.9) 0%, rgba(30,30,30,0.9) 100%);
+    z-index: 999;
+}
+
+.boxPopUp{
+    position: fixed;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15%;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 800px;
+    height: 80%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    z-index: 999;
+}
+
+.areaTestoPopUp{
+    padding: 10px;
+    position: relative;
+    float: left;
+    width: 800px;
+    height: 70%;
+    margin-top: 10px;
+}
+
+.boxPopUp .contenutoScrollP{
+    width: 98%;
+    height: 98%;
+    padding-right: -40px!important;
+    margin-top: 5px !important;
+    z-index: 10;
+}
+
+.areaTestoPopUp h2{
+    position: relative;
+    float: left;
+    width: 95%;
+    height: auto;
+    line-height: 140%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.3em;
+    color: #FFF;
+    margin-bottom:10px;
+    font-weight: 900;
+    border-bottom: 1px solid #fff;
+}
+
+.areaTestoPopUp h3{
+    position: relative;
+    float: left;
+    width: 95%;
+    height: auto;
+    line-height: 140%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    color: #FFF;
+    margin-bottom:10px;
+}
+
+.areaTestoPopUp p{
+    position: relative;
+    float: left;
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    line-height: 130%;
+    font-size: 1.6em;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    color: #FFF;
+}
+
+.areaTestoPopUp a{
+    color: #daa959;
+    text-decoration: none;
+    font-weight: bold;
+}
+.testo{
+    color:#FFF;
+}
+.areaTestoPopUp span{
+    position: relative;
+    float: left;
+    width: 97%;
+    height: auto;
+    margin-top: 0px;
+    line-height: 130%;
+    font-size: 1.6em;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    color: #d31145;
+}
+
+.areaTestoPopUp strong {
+    color: #daa959;
+}
+
+.areaTestoPopUp .sezione{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 90px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.areaTestoPopUp .riga {
+    position: relative;
+    float: left;
+    width: 98%;
+    height: auto;
+    clear: both;
+}
+
+.riga.datiS{
+    padding-left: 5px;
+    text-align: left;
+    background-color: #606060;
+    color: #fff;
+}
+
+.riga.datiP{
+    padding-left: 5px;
+    text-align: left;
+    background-color: #BC9B52;
+    color: #fff;
+}
+
+.riga.privacyP{
+    padding-left: 5px;
+    text-align: left;
+    background-color: #A66B6B;
+    color: #fff;
+}
+
+.riga.cookieP{
+    padding-left: 5px;
+    text-align: left;
+    background-color: #88AB8A;
+    color: #fff;
+}
+
+.chiudiPopup{
+    position: absolute !important;
+    top: -5px;
+    right: 10px;
+    width: auto;
+    margin: 0;
+    float: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.chiudiPopup img{
+    width: 30px;
+    height: auto;
+}
+
+/**************** fine stile generico  ******************/
+
+/**************** popUp area Vip  ******************/
+
+/**************** Banner Vip *****************************/
+
+.bannerVip {
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    margin-right: 0px;
+    width: 232px;
+    height: 200px;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+
+.area_bannerVip{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/png/sfondo_popup.png');
+    background-repeat: repeat;
+    display: none;
+    z-index: 100;    
+}
+
+.area_bannerVip .boxPopUp{
+    position: fixed;
+    display: block;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top:0;
+    bottom:0;
+    margin-top:auto;
+    margin-bottom:auto;
+    width: 540px;
+    height: 75%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+}
+
+#chiudi_bannerVip .chiudi{
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.area_bannerVip .areaTestoPopUp{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.area_bannerVip .areaTestoPopUp h3{
+    position: relative;
+    float: left;
+    width: 100%;
+	height: 100%;
+    margin-top: 10px;
+    line-height: 120%;
+    text-align:  center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+	font-size: 2.2em;
+	color: #868982;
+}
+
+.area_bannerVip .areaTestoPopUp .testo{
+    position: relative;
+    float: left;
+    width: 100%;
+	height: 100%;
+    margin-top: 10px;
+    line-height: 140%;
+    text-align:  justify;
+    font-family: 'Raleway', sans-serif;
+	font-size: 1.6em;
+    color: #868982;
+}
+
+.areaForm_bannerVip{
+    position: relative;
+    float: left;
+    width: 100%; 
+    height: auto;
+    text-align: center;
+    margin-top: 10px; 
+}
+.areaForm_bannerVip .formVip{
+    position: relative;
+    width: 200px;
+    margin-left: 50px;
+}
+
+.areaForm_bannerVip .formVip input{
+    height: 40px;
+    width: 200px;
+    padding-left: 5px;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.areaForm_bannerVip .buttonformVip{
+    position: relative;
+    clear: both;
+    width: 100%;
+    float: left;
+    width: auto;
+    margin-top: 30px;
+    margin-left: 120px;   
+}
+
+.areaForm_bannerVip .buttonformVip button{
+    position: relative;
+    float: left;
+    height: auto;
+    width: 300px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 3px;
+    cursor: pointer;
+	border: 1px solid #1F1E22;
+    overflow: hidden;
+    background-color: #AA4AB2;
+}
+
+.areaForm_bannerVip .buttonformVip button:hover{
+    text-decoration: none;
+    box-shadow: inset 0px 0px 10px #fff;
+    -webkit-box-shadow: inset 0px 0px 10px #fff;
+    -moz-box-shadow: inset 0px 0px 10px #fff;
+    -o-box-shadow: inset 0px 0px 10px #fff;
+}
+
+.accedi_bannerVip p{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-transform: uppercase;        
+}
+
+/**************** fine popUp area Vip  ******************/
+
+/**************** popup cookie/privacy  ******************/
+
+#popoupPrivacy .boxPopUp{
+    position: fixed;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 700px;
+    height: 80%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    z-index: 999;
+}
+
+#popoupPrivacy .areaTestoPopUp{
+    padding: 15px;
+    position: relative;
+    float: left;
+    width: 700px;
+    height: 90%;
+    margin-top: 10px;
+}
+
+#popoupPrivacy .areaTestoPopUp.boxpopup{
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);    
+}
+
+#popoupPrivacy .contenutoScroll{
+    width: 98%;
+    height: 98%;
+    padding-right: -20px;
+    margin-top: 5px !important;
+    z-index: 5;
+}
+
+#popoupPrivacy .areaTestoPopUp h3{
+    position: relative;
+    float: left;
+    width: 95%;
+    height: auto;
+    line-height: 140%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #B49B49;
+    margin: 0;
+    padding: 0;
+    padding-top: 3px;
+    margin-bottom:10px;
+}
+
+#popoupPrivacy .areaTestoPopUp p{
+    position: relative;
+    float: left;
+    width: 95%;
+    margin-left: 3px;
+    height: auto;
+    line-height: 130%;
+    font-size: 13px;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    color: #707070;
+}
+
+#popoupPrivacy .areaTestoPopUp span{
+    position: relative;
+    float: left;
+    width: 95%;
+    margin-left: 3px;
+	height: auto;
+    line-height: 130%;
+	font-size: 13px;
+    text-align: justify;
+	font-family: 'Raleway', sans-serif;
+	color: #707070;
+}
+
+#popoupPrivacy .areaTestoPopUp strong {
+	color: #B49B49;
+}
+
+#popoupPrivacy .areaTestoPopUp .sezione{
+	position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+#popoupPrivacy .areaTestoPopUp .riga {
+	position: relative;
+    float: left;
+    width: 96%;
+    height: auto;
+    clear: both;
+}
+
+#popoupPrivacy .riga.datiS{
+    padding-left: 5px;
+    text-align: left;
+    background-color: #606060;
+    color: #fff;
+}
+
+#popoupPrivacy .riga.datiP{
+    padding-left: 5px;
+    text-align: left;
+    background-color: #BC9B52;
+    color: #fff;
+}
+
+#popoupPrivacy .riga.privacyP{
+    padding-left: 5px;
+    text-align: left;
+    background-color: #A66B6B;
+    color: #fff;
+}
+
+#popoupPrivacy .riga.cookieP{
+    padding-left: 5px;
+    text-align: left;
+    background-color: #88AB8A;
+    color: #fff;
+}
+
+#popoupPrivacy .testoPrivacy{}
+
+#popoupPrivacy .testoCookie{}
+
+/**********************************************************************/
+/********* popup contenuto form ***********/
+
+.areaTestoPopUp .cmsform {
+    position: relative;
+    float: left;
+    width: 98%;
+    margin-top: -10px;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #333;
+}
+
+.areaTestoPopUp .cmsform .textbox {
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
+    width: 60%;
+    height: 35px;
+    color: #858585;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #FFFFFF;
+    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+    /* transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+}
+
+.areaTestoPopUp .cmsform .textarea {
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
+    width: 100%;
+    color: #858585;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    height: 100px;
+    width: 95%;
+    resize: none;
+}
+
+.areaTestoPopUp .cmsform select {
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
+    width: 355px;
+    color: #858585;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    height: auto !important;
+}
+
+.areaTestoPopUp .cmsform .textbox:focus {
+    border-color: #666;
+    background: #666;
+    outline: 0;
+    /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204, 204, 204, 0.6); */
+    color: #fff;
+}
+
+.areaTestoPopUp .cmsform .textarea:focus {
+    border-color: #333;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204, 204, 204, 0.6);
+}
+
+.areaTestoPopUp .cmsform .testo {
+    width: 100%;
+    margin-top: 13px;
+    font-size: 17px;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.areaTestoPopUp .cmsform .input {
+    margin-top: 10px;
+    color: #FFF;
+}
+.input li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.input input{
+    margin-right: 5px;
+}
+.scelta{
+    
+}
+
+.areaTestoPopUp .cmsform .buttonFastFr { float: left; }
+
+.areaTestoPopUp .cmsform .buttonTesto {
+    width: 160px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.areaTestoPopUp .buttonFastFr{
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+    display: block;
+    clear: both;
+    margin-left: 0 !important;
+}
+
+.areaTestoPopUp .buttonFastFr button{
+    width:230px;
+    margin: 0 auto;
+    padding: 10px;  
+    cursor:pointer;
+    background: #DAA959;
+    border-radius: 3px;
+}
+
+.areaTestoPopUp .buttonFastFr button:hover{
+    background: #4C4C4C;
+    text-decoration: none;
+}
+
+.areaTestoPopUp .buttonFastFr button:hover > span{
+    color:#fff;
+}
+
+.areaTestoPopUp .buttonTesto{
+    position: relative;
+    float:left;
+    width: 160px;
+    height:auto;
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    text-transform:uppercase;
+}
+
+.areaTestoPopUp .buttonFreccia{
+    position: relative;
+    float:right;
+    width:20px;
+    height:auto;
+    margin-top: 1px;
+    font-size:1.9em;
+    line-height: 1;
+    font-family: 'iconecms';
+    color:#fff;
+}
+
+/**********************************************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .boxPopUp, .areaTestoPopUp{
+        width: 700px;
+    }
+    .tariffe, .planimetria{
+        width: 600px !important;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .areaTestoPopUp .buttonFastFr {
+        margin-top:30px;
+    }
+    .areaTestoPopUp .buttonFastFr button {
+    width: 230px !important;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+    background: #d31145;
+    border-radius: 3px;
+    }
+    .areaTestoPopUp .cmsform .buttonTesto {
+    width: 160px !important;
+    font-size: 1em;
+    margin-top: 7px;
+    }
+    .areaTestoPopUp .buttonTesto {
+    position: relative;
+    float: left;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #container-box{
+        width: 740px;
+        margin-left: -370px;
+    }
+    .flagApriBox{
+        margin-left: -105px;
+    }
+    .box{
+        width: 420px;
+    }
+    .contenutoBox{
+        width: 400px;
+    }
+    
+}
