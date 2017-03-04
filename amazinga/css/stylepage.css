@@ -101,6 +101,21 @@ ul{list-style-type: none;}
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
+div h4 {
+    color: #ff7900
+}
+#buttonprenota{
+    background:    #cfe2f3;
+background:    -webkit-linear-gradient(#cfe2f3, #fff);
+background:    linear-gradient(#cfe2f3, #fff);
+border-radius: 22px;
+color:         #439f1b;
+display:       inline-block;
+padding:       35px 17px;
+font:          normal 400 45px/1 "Pacifico", cursive;
+text-align:    center;
+text-shadow:   2px 2px 0 #f00;
+}
 #carousel-1 .item div{
     position: absolute;
     left: 50%;
@@ -116,7 +131,7 @@ ul{list-style-type: none;}
 }
 #carousel-1 h4{
     font-size: 3em;
-    color: #FFF;
+    color: #FF9700;
 }
 #carousel-1 p{
     font-size: 2em;
