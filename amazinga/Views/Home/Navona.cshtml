@@ -1,391 +1,473 @@
-﻿
-<div class="container-fluid">
+﻿<!-- SLIDESHOW -->
 
-    <!-- HEADER -->
-    <nav class="navbar navbar-fixed-top" id="menu" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle col-xs-2" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Espandi barra di navigazione</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-				</button>
-        </div>
-  
-        <div class="row collapse navbar-collapse navbar-ex1-collapse" >
-            <ul class="col-sm-12 col-md-push-1 col-md-9 nav navbar-nav">
-                <li><img src="/img/png/logo_amazingsuiterome-bianco.png" alt="logo amazing suite rome" class="logo"></li>
-                <li><a href="/colosseo/nuovohome.php" title="Amazing Suite Rome - Colosseo" target="_blank">Amazing Suite Colosseo</a></li>
-                <li><a href="/vittoriano/" title="Amazing Suite Rome - Vittoriano" target="_blank">Amazing Suite Vittoriano</a></li>
-                <li><a href="#" title="Amazing Suite Rome - Navona" target="_blank">Amazing Suite Navona</a></li>
-				<li><a href="#footer" title="Contatti" data-toggle="collapse" data-target=".navbar-collapse.in">CONTATTI</a></li>
-            </ul>
-	    <!--
-            <ul class="col-sm-12 col-md-2" id="lingue">
-                <li><a href="/">IT</a></li>
-                <li class="slash">-</li>
-                <li><a href="en/">EN</a></li>
-            </ul>
-	    -->
-        </div>
-    </nav>
-  <!--MODALE -->
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="background:url(/img/jpg/colosseo.jpg); background-repeat: no-repeat; background-size:inherit; color:white">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 style="color:#DAA520" class="modal-title">Richiedi la tua suite</h4>
-        </div>
-        <div class="modal-body">
-   
-		<div class="form-group row">
-		<div  class="col-sm-6">		 
-    <p> Nome e Cognome</p>
-    <input style="color:black" type="text" id="nomecognome" class="form-horizontal"/>
-				 </div>
-				 <div  class="col-sm-6">
-				 <p> Email </p>
-				 <input style="color:black" type="text" name="email" id="email" class="form-horizontal"/>
-				 </div>
-				<div  class="col-sm-6">		 
-    <p> Data </p>
-    <input type="text" style="color:black" id="checkin" class="form-horizontal"/>
-				 </div>
-				 	<div  class="col-sm-6">		 
-    <p> Numero delle notti</p>
-    <input type="text" id="notti" style="color:black" class="form-horizontal"/>
-				 </div>
-				 <div  class="col-sm-6">
-				 <p> Posti </p>
-				 <input type="text" id="posti" style="color:black" class="form-horizontal"/>
-				 </div>
-				 <hr>
-				 <div class="col-sm-12">
-					 <p>Richieste Aggiuntive</p>
-			 <div class="col-sm-6">
-    <p for="servizi" style="font-size:10px">Servizi :Babysitting
-Transfer
-Cooking day
-Chef service
-Rental e-bike
-Vatican tour
-Colosseo e Fori Imperiali tour
-Galleria borghese tour
-Personal shopper
-Parking a disposizione
-Private Sightseeing tour
-Dog-sitting
-Personal trainer</p>
-  </div>
-				<div class="col-sm-6">
-				 <textarea class="form-control" id="servizi" rows="3"></textarea></div> </div>
-  </div>
-		
-	 <!--	<a class="btn btn-default"  href="mailto:gabrio89@hotmail.it">Invio Email</a><br>-->
-		 <button class="btn btn-default" name="prenota" onclick="myFunction()" id="prenota">Prenota Ora</button>
-			</div>
-		
-	   
-			
-			
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div></div>
-      </div>
-	
-
-
-    <!-- SLIDESHOW -->
-    
     <div id="carousel-1" class="row carousel slide wow fadeIn" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-                <div class="item active">
+            <div class="item active">
+                <img src="~/img/jpg/navona/navonabeds.jpg" alt="">
+                <div class="col-sm-push-1 col-sm-10">
+                    <a href="#" title="Amazing Suite Rome - Navona">
+                        <h4>Amazing Suite Navona</h4>
+                        <p></p>
+                    </a>
+                    <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                    <div class="clearfix"></div>
+                    <br />
+                </div>
+
+
+            </div>
+
+            <div class="item">
+                <img src="~/img/jpg/navona/navonaangolo.jpg" alt="">
+                <div class="col-sm-push-1 col-sm-10">
+                    <a href="#" title="Amazing Suite Rome - Navona">
+                        <h4>Amazing Suite Navona</h4>
+                        <p></p>
+                    </a>
+                                        <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                    <div class="clearfix"></div>
+                    <br />
+                </div>
+
+
+            </div>
+            <div class="item">
                 <img src="/img/jpg/navona/navona-min.jpg" alt="">
                 <div class="col-sm-push-1 col-sm-10">
-                    <a href="#" title="Amazing Suite Rome - Navona"><h4>Amazing Suite Navona</h4>
-                    <p>La tua casa al centro di Roma</p></a>
+                    <a href="#" title="Amazing Suite Rome - Navona">
+                        <h4>Amazing Suite Navona</h4>
+                        <p>La tua casa al centro di Roma</p>
+                    </a>
+                                        <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                    <div class="clearfix"></div>
+                    <br />
                 </div>
+
+
             </div>
             <div class="item">
                 <img src="/img/jpg/navona/good.jpg" alt="">
                 <div class="col-sm-push-1 col-sm-10">
-                    <a href="#" title="Amazing Suite Rome - Vittoriano"><h4>Amazing suite Navona</h4>
-                    <p>Comfort di lusso per il tuo soggiorno</p></a>  
-                 </div>        
+                    <a href="#" title="Amazing Suite Rome - Vittoriano">
+                        <h4>Amazing suite Navona</h4>
+                        <p>Comfort di lusso per il tuo soggiorno</p>
+                    </a>                    <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                </div>
             </div>
             <div class="item">
                 <img src="/img/jpg/navona/navonacamera.jpg" alt="">
                 <div class="col-sm-push-1 col-sm-10">
-                    <a href="#" title="Amazing Suite Rome - Colosseo" ><h4>Amazing Suite Navona</h4>
-                    <p>a Piazza Navona</p></a>
-                    </div>        
+                    <a href="#" title="Amazing Suite Rome - Colosseo">
+                        <h4>Amazing Suite Navona</h4>
+                        <p>a Piazza Navona</p>
+                    </a>                    <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                </div>
             </div>
             <div class="item">
                 <img src="/img/jpg/navona/navonagrandangolo.jpg" alt="">
                 <div class="col-sm-push-1 col-sm-10">
-                    <a href="#" title="Amazing Suite Rome - Vittoriano" ><h4>Amazing suite Navona</h4>
-                    <p>Vivi tutto il fascino di Roma</p></a>    
+                    <a href="#" title="Amazing Suite Rome - Vittoriano">
+                        <h4>Amazing suite Navona</h4>
+                        <p>Vivi tutto il fascino di Roma</p>
+                    </a><a href="#contatti" class="btn  button" role="button">Book Now</a>
 
-                    </div>        
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/img/jpg/navona/foschianavona.jpg" alt="">
+                <div class="col-sm-push-1 col-sm-10">
+                    <a href="#" title="Amazing Suite Rome - Navona">
+                        <h4>Amazing Suite Navona</h4>
+                        <p></p>
+                    </a>
+                    <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                    <div class="clearfix"></div>
+                    <br />
+                </div>
             </div>
             <div class="item">
                 <img src="/img/jpg/navona/navonasala.jpg" alt="">
                 <div class="col-sm-push-1 col-sm-10">
-                    <a href="#" title="Amazing Suite Rome"><h4>Amazing Suite Navona</h4>
-                    <p>Una sala cinema a tua disposizione...</p></a>
+                    <a href="#" title="Amazing Suite Rome">
+                        <h4>Amazing Suite Navona</h4>
+                        <p>Una sala cinema a tua disposizione...</p>
+                    </a>                   <a href="#contatti" class="btn  button" role="button">Book Now</a>
 
-               </div>        
+                </div>
             </div>
             <div class="item">
                 <img src="/img/jpg/navona/navonavista.jpg" alt="">
                 <div class="col-sm-push-1 col-sm-10">
-                    <a href="#" title="Amazing Suite Rome - Navona"><h4>Amazing suite Navona</h4>
-                    <p>Suite di 60 metri quadrati rifinita in ogni dettaglio</p></a>   
-
-               </div>        
+                    <a href="#" title="Amazing Suite Rome - Navona">
+                        <h4>Amazing suite Navona</h4>
+                        <p>Suite di 60 metri quadrati rifinita in ogni dettaglio</p>
+                    </a>
+                    <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                </div>
             </div>
             <div class="item">
                 <img src="/img/jpg/navona/navonagrandangolo.jpg" alt="">
                 <div class="col-sm-push-1 col-sm-10">
-                    <a href="#" title="Amazing Suite Rome - Navona"><h4>Amazing Suite Navona</h4>
-                    <p>Scopri tutti i servizi a te dedicati</p></a>
-
-               </div>        
+                    <a href="#" title="Amazing Suite Rome - Navona">
+                        <h4>Amazing Suite Navona</h4>
+                        <p>Scopri tutti i servizi a te dedicati</p>
+                    </a>
+                    <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                </div>
             </div>
+
             <div class="item">
                 <img src="/img/jpg/navona/navonabagno.jpg" alt="">
                 <div class="col-sm-push-1 col-sm-10">
-                    <a href="#" title="Amazing Suite Rome" ><h4>Amazing suite NAvona</h4>
-                    <p>Location perfetta per scoprire Roma</p></a>  
+                    <a href="#" title="Amazing Suite Rome">
+                        <h4>Amazing suite Navona</h4>
+                        <p>Location perfetta per scoprire Roma</p>
+                    </a>
+                    <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/img/jpg/navona/navonabed.jpg" alt="">
+                <div class="col-sm-push-1 col-sm-10">
+                    <a href="#" title="Amazing Suite Rome - Navona">
+                        <h4>Amazing Suite Navona</h4>
+                        <p></p>
+                    </a>
+                    <a href="#contatti" class="btn  button" role="button">Book Now</a>
+                 
+                    <br />
+                </div>
 
-                </div>        
+
             </div>
         </div>
-
+        <div class="clearfix"></div>
         <!-- Controls -->
         <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <i class="fa fa-arrow-left"></i>
+
         </a>
         <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <i class="fa fa-arrow-right"></i>
+
         </a>
-    </div>
-    
-    <!-- IL GRUPPO--> 
-    <div class="row wow fadeIn ilgruppo">
-        <div class="col-sm-push-1 col-sm-10">
-            <div class="col-sm-12">
-          </div>    
+   
+</div>
+<hr />
+<!--ICONE piccole sotto carosello-->
+<div class="row wow fadeIn">
+    <div class="col-sm-push-3 col-sm-10">
+        <div class="col-sm-1">
+            <a><i class="fa fa-bed"> 8</i></a>
+        </div>
+        <div class="col-sm-1">
+            <a><i class="fa fa-wifi"></i></a>
+        </div>
+        <div class="col-sm-1">
+            <a><i class="fa fa-tv"></i></a>
+        </div>
+        <div class="col-sm-1">
+            <a><img src="~/img/png/oven.png"></a>
+        </div>
+        <div class="col-sm-1">
+            <a><img src="~/img/png/towel.png"></a>
+        </div>
+        <div class="col-sm-1">
+            <a><img src="~/img/png/washing-machine.png" /></a>
+        </div>
+        <div class="col-sm-1">
+            <a><img src="~/img/png/hair-dryer.png"></a>
+        </div>
+        <div class="col-sm-1">
+            <a><img src="~/img/png/lift-sign.png"></a>
         </div>
     </div>
-    <div class="row wow fadeIn">
-        <div class="col-sm-push-1 col-sm-10">
-            <div class="col-md-6 col-sm-6">
-                <div class="col-sm-12 struttura">
-                    <h4 id="annuncio">AMAZING SUITE NAVONA</h4>
-					<div>Siamo lieti di accogliervi presso Amazing Suite Navona, a pochi metri a piedi dalla famosa Piazza Navona, Pantheon e si affaccia su Campo de 'Fiori il più antico mercato di Roma. E' un piacere informarvi sui servizi attualmente attivi che stiamo fornendo al fine di rendere il vostro soggiorno indimenticabile: La prima colazione continentale a buffet inclusa nel vostro soggiorno servita dal nostro personale, minibar, aria condizionata regolabile autonomamente, riscaldamento e tv satellitare.</div>
-                </div>    
+</div>
+<hr />
+<!--TARIFFE E OFFERTE SPECIALI PANEL-->
+<div class="panel-group">
+    <div class="panel">
+        <div class="row">
+            <div class="col-sm-5">
+
             </div>
-            <div class="col-md-6 col-sm-6">
-           	
-               <div class="col-sm-12 struttura">
-				   
-				<img data-toggle="modal" data-target="#myModal" src="http://www.amazingsuiterome.com/img/png/prenota.PNG" width="250">
-						 
-					<!--	<img onclick="loadPopup(14)" src="http://www.amazingsuiterome.com/vittoriano/data/png/premium-amazing-ita.png" width="250">
-						  <!-- Trigger the modal with a button -->
-				</div>
-       </div>    
-    </div>
-	</div>
-    <!-- CONTATTI -->
-        <!-- Large modal -->
+            <div class="col-sm-6">
 
+                <div class="button" style="color:whitesmoke" data-toggle="collapse" href="#collapse1">Tariffe e offerte speciali</div>
 
+            </div>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="container">
+                    <h2>Le Tariffe dell'Amazing Suite Vittoriano</h2>
+                    <p>Convenienti tariffe e vantagiose offerte speciali</p>
+                    <table class="table table-bordered table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Tariffe Giornaliere Vittoriano</th>
+                                <th>
+                                    Bassa (07 gennaio - 29 febbraio)
+                                </th>
+                                <th>Alta (01 marzo - 31 ottobre)</th>
 
-    <!-- MAPPA
-	<div class="container row clear-fix clear-top">
-    <div class="row wow fadeIn" id="contact">
-        <div class="col-sm-push-1 col-sm-10" id="mappa">
-	    <div class="row">
-		
-		<div class="col-sm-12 struttura">
-		    <h4 style="color:#000;font-size:2em;">Dove siamo</h4>
-		</div>
-		
-		<div class="col-sm-12 col-md-12 contenitore-mappa">
-		    <div id="aprimappa" onclick="inizializzaMappa();"></div>
-		    <div class="mappa">
-			<div id="map_canvas"></div>
-		    </div>
-		</div>
+                                <th>Media (01 novembre - 20 dicembre)</th>
 
-	    </div>
-        </div>    
-    </div>
-	</div>
-		 -->
-    <!-- FOOTER -->
-   
-    <!-- -->
-    <div id="areaPopUp1" class="areaPopUp menuAreaPopUp">
-	<article id="boxPopUp" class="boxPopUp">
-	    <div class="areaTestoPopUp">
-		<div class="contenutoScrollP" tabindex="1" style="overflow: hidden; outline: none;">
-		    <h2 class="titolo-popup">I NOSTRI CONTATTI</h2>
-		    <p>
-			Amazing Suite S.r.l.<br>
-			Via Natale del Grande, 51<br>
-			00153 – Roma<br><br>
+                                <th>Alta (01 marzo - 06 gennaio)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="success">
+                                <td>Pax 4</td>
+                                <td>€229,00</td>
+                                <td>€329,00</td>
+                                <td>€249,00</td>
+                                <td>€349,00</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td>Pax 2</td>
+                                <td>€179,00</td>
+                                <td>€279,00</td>
+                                <td>€199,00</td>
+                                <td>€299,00</td>
+                            </tr>
 
-			Mail: <a href="mailto:info@amazingsuiterome.com">info@amazingsuiterome.com</a><br>
-			Tel. +39 3923858839<br>
-			Tel. +39 3383067149<br><br>
+                            <tr class="info">
+                                <td>Utenze (luce,gas)</td>
+                                <td>Incluse</td>
+                            </tr>
+                            <tr class="info">
+                                <td>Manutenzione ordinaria</td>
+                                <td>Inclusa</td>
+                            </tr>
+                            <tr class="warning">
+                                <td>Deposito cauzionale</td>
+                                <td>€100,00</td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    Servizi offerti: WiFi, Riscacldamento Aria Condizionata in tutti i locali, lavatrice, tv led, forno, asciugacapellli, toaster, kettle, frigo/freezer, 2 set chiavi, mappa città
+                                    e frutta di benvenuto, baby coat, su richiesta, ascensore al piano.
+                                </td>
+                                <td>
+                                    Colazione: su richiesta può essere servita nell'appartamento la colazione (bevanda calda, selezione di croissants, spremuta ed acqua)
+                                </td>
+                                <td>€10,00 a persona</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>
+                                    Costi per le pulizie: comprende la pulizia e la biancheria ad ogni cambio cliente
+                                    (lenzuola, asciugamani, shampoo, bagno schiuma,saponetta, cuffia per la doccia e spugna per a lucidatura delle scarpe).
+                                </td>
+                                <td>
+                                    Pulizie Extra (Min 3 ore con cambio biancheria)
+                                </td>
+                                <td>€30,00</td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    Composizione Appartamento(62mq): Camera Matrimoniale con Bagno, Toilette, Living Room
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="clearfix"></div>
 
-			Pec: <a href="mailto:amazingsuitesrl@legalmail.it">amazingsuitesrl@legalmail.it</a><br>
-			P.IVA 13622691007<br>
-			Numero REA RM – 1461405
-		    </p>
-		</div>
-	    </div>
-	    <div id="chiudiBoxPopUp" class="chiudiPopup">
-		<img onclick="chiudiPopup(1)" src="http://www.amazingsuiterome.com/vittoriano/templates/template_3/img/png/close-box.png">
-	    </div>
-	</article>
-    </div>
-	    <div id="areaPopUp14" class="areaPopUp menuAreaPopUp">
-	<article id="boxPopUp" class="boxPopUp">
-	    <div class="areaTestoPopUp">
-		<div class="contenutoScrollP" tabindex="1" style="overflow: hidden; outline: none;">
-		    <h3 >Richiedi la tua suite</h3>
-		     <div class="form-group row">
-		<div  class="col-sm-6">		 
-    <p> Nome e Cognome</p>
-    <input type="text" class="form-horizontal"/>
-				 </div>
-				 <div  class="col-sm-6">
-				 <p> Email </p>
-				 <input id="email" type="text" class="form-horizontal"/>
-				 </div>
-				<div  class="col-sm-6">		 
-    <p> Data </p>
-    <input type="text" class="form-horizontal"/>
-				 </div>
-				 <div  class="col-sm-6">
-				 <p> Data </p>
-				 <input type="text" class="form-horizontal"/>
-				 </div>
-				 <hr>
-				 <div class="col-sm-12">
-					 <p>Richieste Aggiuntive</p>
-			 <div class="col-sm-6">
-    <p for="exampleTextarea" style="font-size:10px">Servizi :Babysitting
-Transfer
-Cooking day
-Chef service
-Rental e-bike
-Vatican tour
-Colosseo e Fori Imperiali tour
-Galleria borghese tour
-Personal shopper
-Parking a disposizione
-Private Sightseeing tour
-Dog-sitting
-Personal trainer</p>
-  </div>
-				<div class="col-sm-6">
-				 <textarea class="form-control" id="exampleTextarea" rows="3"></textarea></div> </div>
-  </div>
-		
-		</div>
-	    </div>
-			<button class="col-sm-offset-3 col-sm-3">Prenota Ora</button>
-		  <div id="chiudiBoxPopUp" class="chiudiPopup">
-		<img onclick="chiudiPopup(14)" src="http://www.amazingsuiterome.com/vittoriano/templates/template_3/img/png/close-box.png">
-	    </div>
-	</article>
-		
+                <div class="row">
+                    <div class="col-sm-6">
+                        Offerta Speciale
+                        <h4> ADVANCED BOOKING </h4>
+                        SE PRENOTI CON <strong>45</strong> GIORNI DI ANTICIPO POTRAI USUFRUIRE DEL <strong>15%</strong> DI SCONTO!
+
+                        SE PRENOTI CON <strong>30</strong> GIORNI DI ANTICIPO POTRAI USUFRUIRE DEL <strong>10%</strong> DI SCONTO!
+
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="~/img/jpg/advancedimage.jpg" />
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-6">
+                        Offerta Speciale
+                        <h4> MINIMUM STAY</h4>
+                        PRENOTA IL TUO SOGGIORNO PER UN MINIMO DI <strong>6 </strong>NOTTI E AVRAI IL<strong> 15%</strong> DI SCONTO!
+
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="~/img/jpg/minimumimage.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer row" style="align-content:center">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-6"><img class="img-responsive" style="max-height:100px" src="~/img/png/logo_amazingsuiterome.png" /></div>
+            </div>
+        </div>
     </div>
 </div>
-    <script>
-	function myFunction()
-     {
-         alert('h');
-         document.location.href = "mailto:matteo.ponzetta@gmail.com?subject=richiesta di prenotazione&body=Salve richiedo informazioni sulla prenotazione della camera"+document.title+" mi chiamo:"+document.getElementById("nomecognome").value+" la mia mail:"+document.getElementById("email").value+" data di check-in:"+document.getElementById("checkin").value+" numero di notti: "+document.getElementById("notti").value+" numero di persone:"+document.getElementById("posti").value;
-     }
+<div class="clearfix"></div>
+<hr />
+<!-- IL GRUPPO DESCRIZIONE E SERVIZI MODALE-->
 
-	</script>
-    <!-- Core Scripts -->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap/bootstrap.min.js"></script>
-    
-    <script src="/js/loadpopup.js" type="text/javascript"></script>
+<div class="row wow fadeIn ilgruppo">
+    <div class="col-sm-push-1 col-sm-10">
+        <div class="col-sm-12">
+        </div>
+    </div>
+</div>
+<div class="row wow fadeIn">
+    <div class="col-sm-push-1 col-sm-10">
+        <div class="col-md-6 col-sm-6">
+            <div class="col-sm-12 struttura">
+                <h4 id="annuncio">AMAZING SUITE NAVONA</h4>
+                <div>
+                    Siamo lieti di accogliervi presso Amazing Suite Navona, a pochi metri a piedi dalla famosa Piazza Navona, Pantheon e si affaccia su Campo de 'Fiori il più antico mercato di Roma.
+                    E' un piacere informarvi sui servizi attualmente attivi che stiamo fornendo al fine di rendere il vostro soggiorno indimenticabile: La prima colazione continentale a buffet inclusa nel vostro soggiorno servita dal nostro personale, minibar, aria condizionata regolabile autonomamente,
+                    riscaldamento e tv satellitare.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
 
-   <!-- <script src="/js/plugins/jquery.easing.min.js"></script>-->
-    <script src="/js/plugins/classie.js"></script>
-    
-    <!-- Utilizzato per la barra del menu fissa -->
-    <script src="/js/plugins/cbpAnimatedHeader.js"></script>
-    
-    <!-- Utilizzato per le slide in carousel -->
-    <script src="/js/plugins/owl-carousel/owl.carousel.js"></script>
-    
-    <!-- Utilizzati per la sezione della gallery -->
-    <script src="/js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="/js/plugins/background/core.js"></script>
-    <script src="/js/plugins/background/background.js"></script>
-    <script src="/js/plugins/jquery.mixitup.js"></script>
+            <div class="col-sm-12 struttura">
 
-    <!-- Jquery ui
-    <script src="/js/jquery-ui.min.js"></script>
-    -->
-    <!-- Mobile 
-    <script src="/js/jquery.mobile.custom.min.js"></script>
-    -->
-    <script type="text/javascript">
-	$(document).ready(function() {  
-	$(".carousel").swipe({
+                <div data-toggle="modal" data-target="#myModal" src="" width="250">
 
-  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                    <!--<img onclick="loadPopup(14)" src="~/img/jpg/cattura.jpg" width="250">
+                          <!-- Trigger the modal with a div -->
+                    <div class="button">Servizi dedicati</div>
 
-    if (direction == 'left') $(this).carousel('next');
-    if (direction == 'right') $(this).carousel('prev');
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<hr />
+<div class="container" style="max-height:700px">
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="img-responsive" src="~/img/jpg/navona/navonaoutdoor.jpg" alt="">
+            <div class="col-sm-push-1 col-sm-10">
+                <a href="#" title="Amazing Suite Rome">
+                   
+                    </a>       
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-responsive" src="~/img/jpg/navona/navonaout2.jpg" alt="">
+            <div class="col-sm-push-1 col-sm-10">
+                <a href="#" title="Amazing Suite Rome">
+                    
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-responsive" src="~/img/jpg/navona/windowoutnavona.jpg" alt="">
+            <div class="col-sm-push-1 col-sm-10">
+                <a href="#" title="Amazing Suite Rome">
+                    
+                </a>
+            </div>
+        </div>
+    <h4>
+        "If you’re writing a medium or long section of text, break it up with more than one paragraph for better readability.”
+        - SOMEONE ONCE SAID
+    </h4>
+        
+        <div class="col-sm-push-4 col-sm-4">
+            <img class="img-responsive" src="~/img/jpg/navona/navonavista.jpg" alt="">
+            <div class="col-sm-push-1 col-sm-10">
+                <a href="#" title="Amazing Suite Rome">
 
-  },
-  allowPageScroll:"vertical"
+                </a>
+            </div>
+        </div>
+</div>
+    </div>
 
-});
-	  /*  $("#carousel-1").swiperight(function() {  
-		$(this).carousel('prev');  
-	    });  
-	    $("#carousel-1").swipeleft(function() {  
-		$(this).carousel('next');  
-	    });         
+<div class="clearfix"></div>
+ <div class="panel-group">
+    <div class="panel">
+        <div class="row">
+            <div class="col-sm-5">
 
-	    $("#carousel-2").swiperight(function() {  
-		$(this).carousel('prev');  
-	    });  
-	    $("#carousel-2").swipeleft(function() {  
-		$(this).carousel('next');  
-	    });  
-*/
+            </div>
+            <div class="col-sm-6">
 
-});
+                <div class="button" style="color:whitesmoke" data-toggle="collapse" href="#collapse2">Video</div>
 
-    </script>
-    
-    <!-- Theme Scripts -->
-    <script src="/js/wow/wow.min.js"></script>
-  <!--  <script src="/js/functions.js"></script>
-    <script src="/js/ilgruppo.js"></script>-->
-    
-    <!--------------------script googleMaps------------------------ -->
-    <script src="http://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
-    <script src="/js/mappagoogle.js" type="text/javascript"></script>
+            </div>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="container">
+                    <h2>Splendidi Video di splendidi appartamenti</h2>
+                   
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E4tz68hyT8s" frameborder="0" allowfullscreen></iframe>
+
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E4tz68hyT8s" frameborder="0" allowfullscreen></iframe>
+
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E4tz68hyT8s" frameborder="0" allowfullscreen></iframe>
+
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E4tz68hyT8s" frameborder="0" allowfullscreen></iframe>
+
+
+                </div>
+                <div class="clearfix"></div>
+                <hr />
+            </div>
+            <div class="panel-footer row" style="align-content:center">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-6"><img class="img-responsive" style="max-height:100px" src="~/img/png/logo_amazingsuiterome.png" /></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<hr />
+
+<!-- Jquery ui
+<script src="/js/jquery-ui.min.js"></script>
+-->
+<!-- Mobile
+<script src="/js/jquery.mobile.custom.min.js"></script>
+-->
+
+<script type="text/javascript">
+  /*  $(document).ready(function () {
+        $("#carousel-1").swipe({
+
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+
+            },
+            allowPageScroll: "vertical"
+
+        });
+        $("#carousel-2").swipe({
+
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+
+            },
+            allowPageScroll: "vertical"
+
+        });
+    });*/
+  
+   
+</script>
+   

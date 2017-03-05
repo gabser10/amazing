@@ -104,6 +104,10 @@ ul{list-style-type: none;}
 div h4 {
     color: #ff7900
 }
+div  a .button {
+    background-color:aqua;
+}
+
 #buttonprenota{
     background:    #cfe2f3;
 background:    -webkit-linear-gradient(#cfe2f3, #fff);

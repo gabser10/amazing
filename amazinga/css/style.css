@@ -12,6 +12,11 @@ div {
     font-family: 'Ranga', cursive;
     font-size: 25px;
 }
+a  {
+    font-family: 'Ranga', cursive;
+    font-size: 25px;
+}
+
 
 .clearfix:before, .clearfix:after {
     display: table;

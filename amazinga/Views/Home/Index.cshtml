@@ -75,7 +75,7 @@
 
         </a>
         <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
-            <i class="fa fa-arrow-right fa-2x" ></i>
+            <i class="fa fa-arrow-right fa-fw fa-2x"></i>
 
         </a>
     </div>
@@ -169,7 +169,22 @@
     <!-- FOOTER -->
   
     
-    
+  <!--  <script type="text/javascript">
+    $(document).ready(function () {
+        $(".carousel").swipe({
+
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+
+            },
+            allowPageScroll: "vertical"
+
+        });
+    });
+</script>
 
 
+      -->
     <!--Fine Codice ShinyStat-->
